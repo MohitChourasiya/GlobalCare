@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    -<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+
+    -<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginEnd="43dp"
+    android:layout_marginBottom="52dp"
+    android:layout_marginTop="34dp">
+
+    <ImageView
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="18dp"
+        android:src="@drawable/left_arrow"
+        android:id="@+id/error_arrow"/>
+
+
+    -<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginStart="14dp"
+    android:id="@+id/search_rel"
+    android:layout_toRightOf="@+id/error_arrow"
+    android:background="@drawable/forgotbtn_round">
+
+    <EditText
+        android:id="@+id/search_txt"
+        android:layout_width="323dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="43dp"
+        android:layout_toRightOf="@+id/img_search"
+        android:fontFamily="@font/inter_regular"
+        android:hint="ADBJURK"
+        android:textColorHint="#000000" />
+
+    <ImageView android:layout_height="22dp"
+        android:layout_width="22dp"
+        android:layout_marginEnd="13dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="13dp"
+        android:src="@drawable/magnifying"
+        android:id="@+id/img_search"/>
+
+</RelativeLayout>
+
+</RelativeLayout>
+
+    <ImageView
+        android:layout_height="300dp"
+        android:layout_width="300dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/noresultsearch"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/inter_semi_bold"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text="No encontrado"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="376dp"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/inter_regular"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="14dp"
+        android:text=" Lo sentimos, no se puede encontrar la palabra clave que ingresó, verifique nuevamente o encuentre otra palabra clave." android:textColor="#000000"/>
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

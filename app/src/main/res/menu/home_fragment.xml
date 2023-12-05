@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/home"
+        android:title="Hogar"
+        android:icon="@drawable/hf"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/calender"
+        android:title="Cita"
+        android:icon="@drawable/cf"
+        android:visible="true"/>
+    <item
+        android:id="@+id/history"
+        android:title="Historia"
+        android:icon="@drawable/nf"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/article"
+        android:title="Artículo"
+        android:icon="@drawable/blog"
+        android:visible="true"/>
+
+
+    <item
+        android:id="@+id/profile"
+        android:title="Perfil"
+        android:icon="@drawable/uf"
+        android:visible="true"/>
+
+
+
+
+</menu>

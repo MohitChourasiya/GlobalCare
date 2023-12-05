@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Doctor_profile_Fragment">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="60dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="34dp"
+                    android:layout_marginBottom="70dp">
+
+                    <ImageView
+                        android:id="@+id/leftarrow"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/left_arrow"
+                        android:layout_centerVertical="true"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dr. Jenny Watson"
+                        android:layout_toRightOf="@+id/leftarrow"
+                        android:layout_marginStart="15dp"
+                        android:layout_centerVertical="true"
+                        android:textSize="24sp"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/inter_medium"
+                        android:layout_marginEnd="10dp"/>
+
+                </RelativeLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="380dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardPreventCornerOverlap="true"
+
+                    android:outlineSpotShadowColor="#000000"
+
+                    android:layout_gravity="center"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/img_doctor"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="9dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginEnd="14dp"
+                            android:src="@drawable/doctor"
+
+                            />
+                        <TextView
+                            android:id="@+id/txt_doc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dr. Jenny Watson"
+                            android:textSize="16sp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="22dp"
+                            android:layout_toRightOf="@+id/img_doctor"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:id="@+id/txt_disc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cardiólogo"
+                            android:textSize="16sp"
+                            android:layout_marginTop="22dp"
+                            android:layout_toRightOf="@+id/img_doctor"
+                            android:layout_marginBottom="44dp"
+
+                            android:layout_alignParentBottom="true"
+                            android:textColor="#000000"/>
+
+                        <TextView
+                            android:id="@+id/txt_disc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cardiólogo"
+                            android:textSize="16sp"
+                            android:layout_marginTop="22dp"
+                            android:layout_marginStart="19dp"
+                            android:layout_toRightOf="@+id/txt_disc"
+                            android:layout_marginBottom="44dp"
+                            android:layout_alignParentBottom="true"
+                            android:textColor="#000000"/>
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="103dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:text="Sobre mí"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available."
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="21dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp"
+                    android:text="Horas Laborales"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp">
+                    <TextView
+                        android:id="@+id/txt_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lunes -Viernes"
+                        android:textSize="16sp"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:id="@+id/txt_time1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:text="08:30 AM - 18:00 PM"
+                        android:textSize="16sp"
+                        android:layout_toRightOf="@+id/txt_time"
+                        android:textColor="#000000"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/sele_fect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="21dp"
+                        android:text="Seleccione fecha"
+                        android:textColor="#000000"
+                        android:textSize="24sp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_toRightOf="@+id/sele_fect"
+                        android:src="@drawable/calender"
+                        android:layout_centerVertical="true"/>
+
+
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20/10/2022"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="44dp"/>
+
+
+                <TextView
+                    android:id="@+id/selefect"
+                    android:layout_width="199dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="21dp"
+                    android:text="Seleccionar hora"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/round_doctor_time"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:text="09:00"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/round_doctor_time"
+                        android:layout_marginStart="12dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:text="10:00"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/round_doctor_time"
+                        android:layout_marginStart="12dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:text="11:00"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/round_doctor_time"
+                        android:layout_marginStart="12dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:text="12:00"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="22dp"
+                    android:layout_gravity="center"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/round_doctor_time">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:text="13:00"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/round_doctor_time"
+                        android:layout_marginStart="12dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:text="14:00"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/round_doctor_time"
+                        android:layout_marginStart="12dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:text="15:00"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/round_doctor_time"
+                        android:layout_marginStart="12dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:text="16:00"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="56dp">
+
+
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/round_doctor_time"
+                        android:layout_marginStart="12dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:text="17:00"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/round_doctor_time"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:text="18:00"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+
+                    android:id="@+id/doctor_profile_submitbtn"
+                    android:layout_width="334dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/doctor_profile_subbtn"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="18dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff"
+                        android:text="reservar una cita"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
